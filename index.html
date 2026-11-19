@@ -1,0 +1,384 @@
+<!doctype html><html lang="ja"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<meta name="description" content="2026年11月29日（日）下北沢・原宿の2会場で開催。島根県石見地域の特産品マルシェと、石見に触れるワークショップ。">
+<meta property="og:title" content="いわみまるっと市 2026">
+<meta property="og:description" content="2026年11月29日（日）下北沢・原宿の2会場で開催。石見の特産品マルシェとワークショップ。">
+<meta property="og:type" content="website">
+<title>いわみまるっと市</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<style>
+/* Layout: 有福商店の告知投稿に合わせた配色（深緑・クラフト紙・赤の吹き出し）。会場色は下北沢＝緑、原宿＝赤。写真つき企画カード → 時間割 → 会場 → 昨年の様子 */
+:root {
+  --bg: #F1EBE2;
+  --surface: #FFFDF9;
+  --ink: #1F241F;
+  --muted: #5E625A;
+  --line: #DDD3C4;
+  --kraft: #E7DCCB;
+  --green: #316745;
+  --green-soft: #DDE9DF;
+  --red: #C9432B;
+  --red-soft: #F6E1DA;
+  --yellow: #E9B53A;
+  --on-accent: #FFFFFF;
+  --font-display: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", "Noto Sans JP", sans-serif;
+  --font-body: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #151A16; --surface: #1D231F; --ink: #ECE7DE; --muted: #A6A99F; --line: #333B35; --kraft: #262C27;
+    --green: #8CC59E; --green-soft: #1F3326; --red: #EE8F78; --red-soft: #3A221C; --yellow: #F0C55C; --on-accent: #151A16;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #151A16; --surface: #1D231F; --ink: #ECE7DE; --muted: #A6A99F; --line: #333B35; --kraft: #262C27;
+  --green: #8CC59E; --green-soft: #1F3326; --red: #EE8F78; --red-soft: #3A221C; --yellow: #F0C55C; --on-accent: #151A16;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.8; }
+.wrap { max-width: 1040px; margin: 0 auto; padding-block: 24px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-direction: column; gap: 64px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.35; }
+h2 { font-size: 1.6rem; font-weight: 900; }
+h3 { font-size: 1.1rem; font-weight: 800; }
+p { margin: 0; }
+a { color: inherit; }
+img { display: block; max-width: 100%; }
+:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; border-radius: 6px; }
+.tnum { font-variant-numeric: tabular-nums; }
+.section { display: flex; flex-direction: column; gap: 20px; }
+.section-head { display: flex; flex-direction: column; gap: 6px; }
+.lead { color: var(--muted); font-size: 0.93rem; max-width: 44em; }
+
+/* 吹き出しラベル（投稿の赤い帯） */
+.bubble { position: relative; align-self: flex-start; background: var(--red); color: var(--on-accent); font-family: var(--font-display); font-weight: 800; font-size: 0.9rem; padding: 4px 16px; border-radius: 4px; margin-bottom: 8px; }
+.bubble::after { content: ""; position: absolute; left: 18px; bottom: -8px; border: 8px solid transparent; border-top-color: var(--red); border-bottom: 0; }
+.bubble.green { background: var(--green); }
+.bubble.green::after { border-top-color: var(--green); }
+
+.pill { display: inline-flex; align-items: center; font-size: 0.78rem; font-weight: 700; padding: 1px 11px; border-radius: 999px; white-space: nowrap; }
+.pill.shimo { background: var(--green-soft); color: var(--green); }
+.pill.hara { background: var(--red-soft); color: var(--red); }
+.pill.free { background: var(--yellow); color: #2A2412; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; text-align: center; gap: 6px; font: inherit; font-weight: 700; text-decoration: none; border-radius: 999px; padding: 10px 22px; border: 1.5px solid transparent; cursor: pointer; }
+.btn.primary { background: var(--green); color: var(--on-accent); }
+.btn.primary:hover { opacity: 0.9; }
+.btn.outline { border-color: var(--green); color: var(--green); background: transparent; }
+.btn.outline:hover { background: var(--green-soft); }
+.btn.small { padding: 6px 16px; font-size: 0.86rem; }
+
+/* Hero */
+.hero { background: var(--green); color: #FFFDF6; border-radius: 22px; padding: 28px; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 28px; align-items: center; }
+.hero-text { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.hero .stamp { align-self: flex-start; background: var(--red); color: #fff; font-family: var(--font-display); font-weight: 900; font-size: 0.82rem; line-height: 1.25; text-align: center; padding: 10px 14px; border-radius: 50%; aspect-ratio: 1; display: grid; place-items: center; max-width: 100%; }
+.hero h1 { font-size: clamp(2.3rem, 7.5vw, 3.6rem); font-weight: 900; letter-spacing: 0.02em; }
+.hero .date { font-family: var(--font-display); font-weight: 800; font-size: 1.15rem; letter-spacing: 0.03em; }
+.hero .date b { font-size: 1.7rem; font-weight: 900; color: #F4CC63; }
+.hero p { color: #E6EEE7; }
+.hero-photo { border-radius: 16px; overflow: hidden; aspect-ratio: 4 / 5; max-width: 100%; background: rgba(255,255,255,0.1); }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.hero .btn.primary { background: #FFFDF6; color: #24402E; }
+.hero .btn.outline { border-color: #FFFDF6; color: #FFFDF6; }
+.hero .btn.outline:hover { background: rgba(255,255,255,0.12); }
+@media (max-width: 760px) { .hero { grid-template-columns: 1fr; padding: 22px; } .hero-photo { max-width: 420px; } }
+
+/* その1 / その2 */
+.contents { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 14px; }
+.content-item { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; display: grid; grid-template-columns: auto 1fr; overflow: hidden; min-width: 0; }
+.content-item .no { background: var(--green); color: var(--on-accent); font-family: var(--font-display); font-weight: 900; padding: 16px 14px; display: grid; place-items: center; font-size: 1.05rem; }
+.content-item .txt { padding: 14px 18px; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.content-item b { font-family: var(--font-display); font-size: 1.05rem; }
+.content-item span { font-size: 0.86rem; color: var(--muted); }
+.notes { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 0.86rem; color: var(--muted); }
+.notes span::before { content: "●"; color: var(--red); font-size: 0.6em; margin-right: 6px; vertical-align: 2px; }
+
+/* Workshops */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.filter { font: inherit; font-size: 0.88rem; font-weight: 700; padding: 5px 16px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.filter[aria-pressed="true"] { background: var(--green); color: var(--on-accent); border-color: var(--green); }
+.ws-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 18px; }
+.ws { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
+.ws-img { aspect-ratio: 4 / 5; max-width: 100%; background: var(--kraft); }
+.ws-img img { width: 100%; height: 100%; object-fit: cover; }
+.ws-body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.ws-meta { display: flex; flex-wrap: wrap; gap: 6px; }
+.times { display: flex; flex-wrap: wrap; gap: 6px; }
+.time { font-variant-numeric: tabular-nums; font-weight: 700; font-size: 0.92rem; padding: 1px 10px; border-radius: 6px; }
+.ws.shimo .time { background: var(--green-soft); color: var(--green); }
+.ws.hara .time { background: var(--red-soft); color: var(--red); }
+.ws-desc { font-size: 0.88rem; }
+.rec { font-size: 0.84rem; color: var(--muted); background: var(--kraft); border-radius: 10px; padding: 8px 12px; }
+.rec b { color: var(--red); font-weight: 700; margin-right: 4px; }
+.spec { display: grid; grid-template-columns: auto 1fr; gap: 0 12px; font-size: 0.86rem; margin: 0; }
+.spec dt { color: var(--muted); }
+.spec dd { margin: 0; min-width: 0; }
+.ws-foot { margin-top: auto; padding-top: 6px; display: flex; flex-direction: column; gap: 6px; }
+.ws-foot .btn { width: 100%; }
+.ws-note { font-size: 0.76rem; color: var(--muted); }
+
+/* Timetable */
+.tt-scroll { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; }
+.tt { display: grid; grid-template-columns: 52px repeat(3, minmax(170px, 1fr)); grid-template-rows: auto repeat(41, 20px); min-width: 600px; }
+.tt-h { padding: 10px 8px; font-size: 0.8rem; font-weight: 700; line-height: 1.4; border-bottom: 1px solid var(--line); }
+.tt-h span { display: block; font-size: 0.7rem; font-weight: 500; color: var(--muted); }
+.tt-h.shimo { color: var(--green); }
+.tt-h.hara { color: var(--red); }
+.tt-time { grid-column: 1; font-size: 0.72rem; color: var(--muted); padding-left: 8px; transform: translateY(-0.55em); font-variant-numeric: tabular-nums; position: sticky; left: 0; background: var(--surface); z-index: 2; }
+.tt-line { grid-column: 2 / -1; border-top: 1px solid var(--line); }
+.tt-line.half { border-top-style: dotted; opacity: 0.7; }
+.blk { margin: 1px 4px; border-radius: 8px; padding: 3px 8px; font-size: 0.74rem; line-height: 1.35; overflow: hidden; min-width: 0; z-index: 1; text-decoration: none; }
+.blk b { display: block; font-size: 0.78rem; }
+.blk.shimo { background: var(--green); color: var(--on-accent); }
+.blk.hara { background: var(--red); color: var(--on-accent); }
+.blk.marche { background: var(--green-soft); color: var(--green); border: 1.5px dashed var(--green); }
+a.blk:hover { opacity: 0.88; }
+
+/* Access */
+.venues { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 18px; }
+.venue { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
+.venue-img { aspect-ratio: 3 / 2; max-width: 100%; background: var(--kraft); }
+.venue-img img { width: 100%; height: 100%; object-fit: cover; }
+.venue-body { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+.venue h3 { font-size: 1.45rem; font-weight: 900; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.venue h3 small { font-size: 0.6em; font-weight: 800; color: var(--muted); }
+.venue.shimo h3 { color: var(--green); }
+.venue.hara h3 { color: var(--red); }
+.dl { display: grid; grid-template-columns: 4.8em 1fr; gap: 6px 12px; margin: 0; font-size: 0.9rem; }
+.dl dt { color: var(--muted); font-size: 0.8rem; padding-top: 2px; }
+.dl dd { margin: 0; min-width: 0; }
+.dl ul { margin: 0; padding-left: 1.1em; }
+.venue-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
+
+/* Last year */
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 14px; }
+.gallery figure { margin: 0; border-radius: 16px; overflow: hidden; aspect-ratio: 4 / 5; max-width: 100%; background: var(--kraft); }
+.gallery img { width: 100%; height: 100%; object-fit: cover; }
+
+.contact { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 20px 22px; display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: center; }
+.contact .tel { font-family: var(--font-display); font-size: 1.5rem; font-weight: 900; font-variant-numeric: tabular-nums; user-select: all; }
+footer { font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="hero-text">
+      <span class="bubble">今年は2会場で開催！</span>
+      <h1>いわみまるっと市</h1>
+      <div class="date tnum"><b>2026.11.29</b>（日）11:00〜19:00</div>
+      <p>石見（いわみ）地方とは、島根県西部のこと。島根が大好きなメンバーがつくる「石見」を楽しむマルシェです。私たちが大好きな石見、私たちが暮らす石見を、東京で暮らす皆さまにもお届けします。</p>
+      <p>11時から19時まで出入り自由。石見神楽の衣装体験や、みそソムリエの味噌食べ比べなど、今年はワークショップも盛りだくさんです！</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#workshops">ワークショップを見る</a>
+        <a class="btn outline" href="#access">会場・アクセス</a>
+      </div>
+    </div>
+    <div class="hero-photo"><img src="img/p_all1.jpg" alt="いわみまるっと市のマルシェに並ぶ石見の特産品"></div>
+  </header>
+
+  <section class="section" aria-labelledby="h-contents">
+    <div class="section-head">
+      <span class="bubble green">CONTENTS</span>
+      <h2 id="h-contents">いわみまるっと市でできること</h2>
+    </div>
+    <div class="contents">
+      <div class="content-item"><div class="no">その1</div><div class="txt"><b>いわみまるっとマルシェ</b><span>島根県石見地域の特産品がたっぷり！　下北沢 11:00〜19:00・出入り自由</span></div></div>
+      <div class="content-item"><div class="no">その2</div><div class="txt"><b>石見に触れるワークショップ</b><span>全8企画。食べものの企画は原宿、ものづくり・神楽の衣装体験は下北沢で開催します</span></div></div>
+    </div>
+    <div class="notes">
+      <span>ワークショップは予約制です</span>
+      <span>お席に余裕があれば当日の受付もできます</span>
+      <span>いわみんでの予約は11月25日（水）まで</span>
+    </div>
+  </section>
+
+  <section class="section" id="workshops" aria-labelledby="h-ws">
+    <div class="section-head">
+      <span class="bubble">その2</span>
+      <h2 id="h-ws">石見に触れるワークショップ</h2>
+      <p class="lead">各企画のボタンから予約してください。「いわみん首都圏」で検索しても予約ページが見つかります。開始の10分前までに会場にお越しください。</p>
+    </div>
+    <div class="filters" role="group" aria-label="会場で絞り込む">
+      <button type="button" class="filter" id="f-all" data-v="all" aria-pressed="true">すべて</button>
+      <button type="button" class="filter" id="f-shimo" data-v="shimo" aria-pressed="false">下北沢</button>
+      <button type="button" class="filter" id="f-hara" data-v="hara" aria-pressed="false">原宿</button>
+      <button type="button" class="filter" id="f-free" data-v="free" aria-pressed="false">参加費無料</button>
+    </div>
+    <div class="ws-list" id="ws-list"></div>
+  </section>
+
+  <section class="section" aria-labelledby="h-tt">
+    <div class="section-head">
+      <span class="bubble green">TIME TABLE</span>
+      <h2 id="h-tt">タイムテーブル</h2>
+      <p class="lead">会場ごとの1日の流れです。ブロックを押すと予約ページが開きます。スマホでは横にスクロールできます。</p>
+    </div>
+    <div class="tt-scroll"><div class="tt" id="tt"></div></div>
+  </section>
+
+  <section class="section" id="access" aria-labelledby="h-access">
+    <div class="section-head">
+      <span class="bubble">ご注意ください</span>
+      <h2 id="h-access">今年は2会場！</h2>
+      <p class="lead">マルシェは下北沢、飲食のワークショップは原宿で開催します。どちらの会場も2階です。</p>
+    </div>
+    <div class="venues">
+      <article class="venue shimo">
+        <div class="venue-img"><img src="img/shimo.jpg" alt="（tefu）lounge 2階スタジオの入口"></div>
+        <div class="venue-body">
+          <h3>下北沢<small>（tefu）lounge 2F studio</small></h3>
+          <dl class="dl">
+            <dt>住所</dt><dd>〒155-0031<br>東京都世田谷区北沢2-21-22 （tefu）lounge 2階</dd>
+            <dt>最寄り駅</dt><dd><ul><li>小田急線 下北沢駅 南西改札口から徒歩0分（駅直結）</li><li>京王井の頭線 下北沢駅 中央改札口から徒歩3分</li></ul></dd>
+            <dt>内容</dt><dd>マルシェ、石見神楽の衣装体験、温泉プラ板、サンドアート、空き家リノベーション</dd>
+          </dl>
+          <div class="venue-links">
+            <a class="btn small outline" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA%E5%8C%97%E6%B2%A22-21-22" target="_blank" rel="noopener">地図を開く</a>
+            <a class="btn small outline" href="https://shopcounter.jp/spaces/tIFjno" target="_blank" rel="noopener">会場の写真を見る</a>
+          </div>
+        </div>
+      </article>
+      <article class="venue hara">
+        <div class="venue-img"><img src="img/hara.jpg" alt="JOINT HARAJUKUの店内。木のテーブルと植物"></div>
+        <div class="venue-body">
+          <h3>原宿<small>JOINT HARAJUKU</small></h3>
+          <dl class="dl">
+            <dt>住所</dt><dd>〒150-0001<br>東京都渋谷区神宮前4-29-9 2階</dd>
+            <dt>最寄り駅</dt><dd><ul><li>東京メトロ副都心線 明治神宮前〈原宿〉駅から徒歩2分</li><li>東京メトロ千代田線 明治神宮前〈原宿〉駅から徒歩4分</li><li>JR山手線 原宿駅から徒歩6分</li></ul></dd>
+            <dt>内容</dt><dd>味噌の食べ比べ、あんこミニパフェ、石見ピザトースト、日本酒と石見神楽</dd>
+          </dl>
+          <div class="venue-links">
+            <a class="btn small outline" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D4-29-9" target="_blank" rel="noopener">地図を開く</a>
+            <a class="btn small outline" href="https://shopcounter.jp/spaces/wRDryi" target="_blank" rel="noopener">会場の写真を見る</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="h-last">
+    <div class="section-head">
+      <span class="bubble green">昨年の様子</span>
+      <h2 id="h-last">去年もたくさんの方に来ていただきました</h2>
+    </div>
+    <div class="gallery">
+      <figure><img src="img/p_all3.jpg" alt="昨年のマルシェの様子"></figure>
+      <figure><img src="img/p_all4.jpg" alt="昨年のワークショップの様子"></figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="h-contact">
+    <div class="section-head"><h2 id="h-contact">お問い合わせ</h2></div>
+    <div class="contact">
+      <div>
+        <p class="lead">有福商店（担当：長友）　受付 9:00〜18:00</p>
+        <p class="tel">070-9145-3207</p>
+      </div>
+      <a class="btn outline" href="https://www.instagram.com/arifukustore/" target="_blank" rel="noopener">Instagram @arifukustore</a>
+    </div>
+  </section>
+
+  <footer>皆さまのご参加をお待ちしております！　いわみまるっと市 2026年11月29日（日）下北沢（tefu）lounge・原宿 JOINT HARAJUKU</footer>
+</div>
+
+<script>
+const WS = [
+  { v: "hara", short: "味噌の食べ比べ", title: "みそソムリエ解説！石見の味噌食べ比べ",
+    desc: "普段何気なく食べるお味噌にも、実はいろいろな種類があります。食べ比べて味噌の世界を楽しみましょう！みそソムリエの楽しい解説と、有福温泉の「福屋みそ」のお土産付きです。",
+    rec: "味噌や発酵の世界に興味がある方、お料理が好きな方",
+    slots: [["10:00","10:30"]], price: "1,500円", cap: "8名", img: "miso1", url: "https://iwamin.jp/programs/6a8cf630421aa9000102ae6c" },
+  { v: "shimo", short: "神楽の衣装体験", title: "名物団長による石見神楽の着付け体験",
+    desc: "石見神楽は、石見地域の暮らしに根付く伝統芸能。1着数百万円を超える本物の衣装を、有福温泉神楽団の名物団長のミニ解説とともに着ることができます。有福温泉のお土産付き。",
+    rec: "お祭りが好きな方、伝統芸能に興味がある方。お子さまから大人まで着られます",
+    slots: [["11:00","11:45"],["14:00","14:45"]], price: "1,500円", cap: "各回4名", img: "kagura1", url: "https://iwamin.jp/programs/6a8d05ab421aa9000102b16f" },
+  { v: "hara", short: "あんこミニパフェ", title: "石見のお菓子で！あんこミニパフェ作り",
+    desc: "あんこ好き、集まれー！有福温泉町の「善太郎餅」さんのあんこをメインに、一緒に特別なミニパフェを作りませんか？善太郎餅のお土産付きです。",
+    rec: "あんこや甘いものが好きな方。島根に行ったことがない方も大歓迎",
+    slots: [["11:00","11:45"],["15:00","15:45"]], price: "2,500円", cap: "各回6名", img: "anko1", url: "https://iwamin.jp/programs/6a8cfad1421aa9000102af59" },
+  { v: "shimo", short: "温泉プラ板", title: "温泉プラ板作り体験",
+    desc: "美肌県と呼ばれる島根の温泉がテーマのプラ板づくり。「石見の湯めぐりガイドブック」を見ながら、皆さんの温泉の思い出も聞かせてください！善太郎餅と温泉まんじゅうを食べながら楽しめます。",
+    rec: "お子さまから大人まで、どなたでも",
+    slots: [["12:00","12:45"],["13:00","13:45"]], price: "無料", cap: "各回4名", free: true, img: "puraban", url: "https://forms.gle/cXGoYPwVbAEtmR5k8" },
+  { v: "hara", short: "石見ピザトースト", title: "自分だけの石見ピザトーストを作ろう",
+    desc: "具材には石見を代表する「のどぐろ」の缶詰や味噌、「エゴマジャム」、新鮮な石見の野菜をご用意。自分だけのトーストを作って、みんなで食べてアレンジパン大賞を決めよう！",
+    rec: "お子さまから大人まで、どなたでも",
+    slots: [["12:00","12:45"],["13:00","13:45"]], price: "無料", cap: "各回4名", free: true, img: "pizza", url: "https://forms.gle/Jz3vcPheHb1pbWcHA" },
+  { v: "shimo", short: "サンドアート", title: "石州和紙を使ったサンドアート体験",
+    desc: "石州和紙は、石見地方で1300年以上の歴史をもつ手漉き和紙。その和紙を台紙に、砂浜の砂やカラーサンドをふりかけて、あなたが思い浮かべる海の景色を作ります。",
+    rec: "海やハンドメイド、おしゃべりが好きな方。お子さまも大歓迎です",
+    slots: [["15:00","15:45"]], price: "1,500円", cap: "5名", img: "sand1", url: "https://iwamin.jp/programs/6a8d0810421aa9000102b237" },
+  { v: "shimo", short: "空き家リノベ", title: "実際にある空き家の歴史を知り、リノベーション方法を考えよう！",
+    desc: "石見には、住んでいた方の歴史が詰まった昔ながらの空き家が各所にあります。ソフトを使って自分好みの古民家を作り、最後は和紙に屋号を書いてみましょう。石州和紙のお土産付き。",
+    rec: "お子さまから大人まで、どなたでも",
+    slots: [["16:00","16:45"],["17:00","17:45"]], price: "無料", cap: "各回4名", free: true, img: "akiya", url: "https://forms.gle/ConRR9JFMf15rdqm8" },
+  { v: "hara", short: "日本酒と石見神楽", title: "日本酒と味わう石見神楽の歴史",
+    desc: "有福温泉神楽団の団長・伊藤さんのお話を伺いながら、島根のおいしい日本酒とおつまみを楽しむ夜。未成年の方にはソフトドリンクをお出しします。",
+    rec: "石見神楽が好きな方はもちろん、はじめての方も",
+    slots: [["17:00","18:00"],["19:00","20:00"]], price: "3,500円", cap: "各回10名", img: "sake1", url: "https://iwamin.jp/programs/6a8d1ea7421aa9000102b701" }
+];
+const VN = { shimo: "下北沢", hara: "原宿" };
+
+function el(tag, attrs, ...kids) {
+  const e = document.createElement(tag);
+  for (const k in attrs || {}) {
+    if (k === "class") e.className = attrs[k];
+    else if (k === "style") e.style.cssText = attrs[k];
+    else e.setAttribute(k, attrs[k]);
+  }
+  for (const c of kids) if (c != null) e.append(c);
+  return e;
+}
+
+const list = document.getElementById("ws-list");
+function renderList(f) {
+  list.replaceChildren();
+  for (const w of WS) {
+    if (f === "free" ? !w.free : (f !== "all" && w.v !== f)) continue;
+    list.append(el("article", { class: "ws " + w.v },
+      el("div", { class: "ws-img" }, el("img", { src: "img/p_" + w.img + ".jpg", alt: w.title, loading: "lazy" })),
+      el("div", { class: "ws-body" },
+        el("div", { class: "ws-meta" }, el("span", { class: "pill " + w.v }, VN[w.v]), w.free ? el("span", { class: "pill free" }, "参加費無料") : null),
+        el("h3", null, w.title),
+        el("div", { class: "times" }, ...w.slots.map(s => el("span", { class: "time" }, s[0] + "–" + s[1]))),
+        el("p", { class: "ws-desc" }, w.desc),
+        el("p", { class: "rec" }, el("b", null, "おすすめ"), w.rec),
+        el("dl", { class: "spec" }, el("dt", null, "参加費"), el("dd", null, w.price), el("dt", null, "定員"), el("dd", null, w.cap)),
+        el("div", { class: "ws-foot" },
+          el("a", { class: "btn primary", href: w.url, target: "_blank", rel: "noopener" }, w.free ? "申込フォームを開く" : "詳細・予約ページを開く"),
+          el("p", { class: "ws-note" }, w.free ? "Googleフォームで申し込めます" : "いわみん（予約は11月25日まで）"))
+      )));
+  }
+}
+document.querySelectorAll(".filter").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".filter").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  renderList(b.dataset.v);
+}));
+renderList("all");
+
+// Timetable 10:00–20:00, 15-minute rows
+const tt = document.getElementById("tt");
+const START = 10 * 60, STEP = 15;
+const row = t => { const [h, m] = t.split(":").map(Number); return (h * 60 + m - START) / STEP + 2; };
+const COLS = [["ワークショップ", "下北沢 2F", "shimo"], ["マルシェ", "下北沢 2F", "shimo"], ["ワークショップ", "原宿 2F", "hara"]];
+tt.append(el("div", { class: "tt-h", style: "grid-column:1;grid-row:1" }));
+COLS.forEach((c, i) => tt.append(el("div", { class: "tt-h " + c[2], style: `grid-column:${i + 2};grid-row:1` }, c[0], el("span", null, c[1]))));
+for (let m = START; m <= 20 * 60; m += 30) {
+  const r = (m - START) / STEP + 2;
+  tt.append(el("div", { class: "tt-line" + (m % 60 ? " half" : ""), style: `grid-row:${r}` }));
+  if (m % 60 === 0) tt.append(el("div", { class: "tt-time", style: `grid-row:${r}` }, (m / 60) + ":00"));
+}
+for (const w of WS) {
+  const col = w.v === "shimo" ? 2 : 4;
+  for (const [f, t] of w.slots) {
+    tt.append(el("a", { class: "blk " + w.v, href: w.url, target: "_blank", rel: "noopener", style: `grid-column:${col};grid-row:${row(f)} / ${row(t)}`, title: `${f}–${t} ${w.title}` },
+      el("b", null, w.short), `${f}–${t}`));
+  }
+}
+tt.append(el("div", { class: "blk marche", style: `grid-column:3;grid-row:${row("11:00")} / ${row("19:00")}` }, el("b", null, "マルシェ"), "11:00–19:00　出入り自由"));
+</script>
+
+</body></html>
